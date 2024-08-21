@@ -1,18 +1,17 @@
-import React, { Fragment } from "react";
-import { Grid } from "@mui/material";
+import React, { Fragment, FC } from "react";
 import Header from "./components/Header";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Footer from "./components/Footer";
 
 /*
 TODO: 
  import { useRouter } from "next/router";
 */
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <Fragment>
       <Header />
-      {/* add footer next */}
+      <Footer />
     </Fragment>
   );
 };

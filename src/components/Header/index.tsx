@@ -1,18 +1,11 @@
-import React, { Fragment } from "react";
-import { Grid } from "@mui/material";
+import React, { FC } from "react";
+import { Grid, Container } from "@mui/material";
+import {headerContainer} from './styles';
 
 interface Tab {
   tabName: string;
   onClick: () => void;
 }
-
-const { headerContainer } = {
-  headerContainer: {
-    padding: "1rem 3rem",
-    display: "flex",
-    justifyContent: "space-between",
-  },
-};
 
 const tabs: Tab[] = [
   {
@@ -37,15 +30,15 @@ const tabs: Tab[] = [
   },
 ];
 
-const Header = () => {
+const Header: FC = () => {
   return (
-    <Grid container component="header" style={headerContainer}>
+    <Container fixed style={headerContainer}>
       {tabs.map((tab: Tab, index: number) => (
         <Grid item key={index} onClick={() => tab.onClick()}>
           {tab.tabName}
         </Grid>
       ))}
-    </Grid>
+    </Container>
   );
 };
 

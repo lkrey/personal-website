@@ -1,8 +1,8 @@
-## HEY! Welcome to my personal website. 
+## HEY! Welcome to my personal website.
 
 ## Tech stack
 
-This is built using create-react-app, Material UI, Typescript. 
+This is built using create-react-app, Material UI, Typescript.
 Coming next: Python, DeepFace
 
 ## Prettier

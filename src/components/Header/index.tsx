@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Grid, Container } from "@mui/material";
-import {headerContainer} from './styles';
+import { headerContainer } from "./styles";
 
 interface Tab {
   tabName: string;
